@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2272589262544521798}
   - component: {fileID: 2893000298183935459}
   - component: {fileID: 1135741877791404329}
+  - component: {fileID: 4710305249954153777}
   m_Layer: 0
   m_Name: BossRoomCeiling2Unity
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495770431597383932}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 4.85, z: 0}
   m_LocalScale: {x: 1959.2365, y: 961.3006, z: 1853.7328}
   m_ConstrainProportionsScale: 0
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4710305249954153777
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495770431597383932}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4088498081093707614, guid: 095c95a14a97747488c7bda15f77e356, type: 3}
