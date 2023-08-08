@@ -8,10 +8,12 @@ public class CollectableController : MonoBehaviour
 {
     public static int coinCount;
     public GameObject coinCountDisplay;
+    public GameObject coinEndDisplay;
     
     // Update is called once per frame
     void Update()
     {
         coinCountDisplay.GetComponent<TMPro.TextMeshProUGUI>().text = "" +  coinCount;
+        coinEndDisplay.GetComponent<TMPro.TextMeshProUGUI>().text = "" + coinCount;
     }
 }

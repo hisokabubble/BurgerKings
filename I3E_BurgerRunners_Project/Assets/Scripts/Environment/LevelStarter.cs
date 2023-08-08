@@ -19,6 +19,7 @@ public class LevelStarter : MonoBehaviour
 
     IEnumerator CountSequence()
     {
+        fadeIn.SetActive(true);
         yield return new WaitForSeconds(1);
         countDown3.SetActive(true);
         yield return new WaitForSeconds(1);
@@ -27,6 +28,8 @@ public class LevelStarter : MonoBehaviour
         countDown1.SetActive(true);
         yield return new WaitForSeconds(1);
         countDownGo.SetActive(true);
+
+        PlayerMove.canMove = true;
 
     }
 
