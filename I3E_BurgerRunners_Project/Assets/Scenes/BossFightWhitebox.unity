@@ -1262,6 +1262,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossRoomCeiling2Unity
       objectReference: {fileID: 0}
+    - target: {fileID: 1495770431597383932, guid: 4ed5c6c3ef9af7e459b82dd40175bfee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2272589262544521798, guid: 4ed5c6c3ef9af7e459b82dd40175bfee,
         type: 3}
       propertyPath: m_RootOrder
@@ -1943,6 +1948,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ShaunAssets
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055618731948302687, guid: 2ec1ed5cc0971c64e99d48cbac2573a9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5576295128469257189, guid: 2ec1ed5cc0971c64e99d48cbac2573a9,
         type: 3}
