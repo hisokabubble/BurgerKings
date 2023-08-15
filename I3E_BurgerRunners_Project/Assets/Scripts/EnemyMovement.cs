@@ -4,34 +4,113 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-[RequireComponent(typeof(NavMeshAgent))]
-
 public class EnemyMovement : MonoBehaviour
 {
-    public Transform Target;
-    public float UpdateSpeed = 0.1f;
+    public string currentState;
+    public string nextState;
 
-    public NavMeshAgent Agent;
+    public float idleTime;
 
-    private void Awake()
-    {
-        Agent = GetComponent<NavMeshAgent>();
-    }
+    private NavMeshAgent agent;
+
+    private Transform playerToChase;
+
+    public GameObject monsterObject;
+
+    public Transform[] checkpoints;
+
+    private int currentCheckpointIndex;
 
     private void Start()
     {
-        StartCoroutine(FollowTarget());
+        agent = GetComponent<NavMeshAgent>();
+        currentState = "Idle";
+        nextState = currentState;
+        SwitchState();
+        
     }
 
-    private IEnumerator FollowTarget()
+    private void Update()
     {
-        WaitForSeconds Wait = new WaitForSeconds(UpdateSpeed);
-
-        while (enabled)
+        if(currentState != nextState)
         {
-            Agent.SetDestination(Target.transform.position);
-
-            yield return Wait;
+            currentState = nextState;
         }
+    }
+
+    public void SeePlayer(Transform player)
+    {
+        playerToChase = player;
+        nextState = "Chase";
+    }
+    void SwitchState()
+    {
+        StartCoroutine(currentState);
+    }
+
+    IEnumerator Idle()
+    {
+        while(currentState == "Idle")
+        {
+            yield return new WaitForSeconds(idleTime);
+
+            nextState = "Patrol";
+            
+        }
+        SwitchState();
+    }
+
+    IEnumerator Patrol()
+    {
+
+        agent.SetDestination(checkpoints[currentCheckpointIndex].position);
+        bool hasReached = false;
+        
+
+        while (currentState == "Patrol")
+        {
+           
+
+            yield return null;
+            if (!hasReached)
+            {
+                monsterObject.GetComponent<Animator>().Play("Walking");
+
+                if (agent.remainingDistance <= agent.stoppingDistance)
+                {
+                    hasReached = true;
+                    
+                    nextState = "Idle";
+                    monsterObject.GetComponent<Animator>().Play("Zombie Scratch Idle");
+
+                    ++currentCheckpointIndex;
+
+                    if(currentCheckpointIndex >= checkpoints.Length)
+                    {
+                        currentCheckpointIndex = 0;
+                    }
+                }
+            }
+        }
+
+        SwitchState();
+    }
+    IEnumerator Chase()
+    {
+        while(currentState == "Chase")
+        {
+            yield return null;
+            if(playerToChase != null)
+            {
+                agent.SetDestination(playerToChase.position);
+                monsterObject.GetComponent<Animator>().Play("Walking");
+            }
+            else
+            {
+                nextState = "Idle";
+                monsterObject.GetComponent<Animator>().Play("Zombie Scratch Idle");
+            }
+        }
+        SwitchState();
     }
 }
