@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Credits : MonoBehaviour
+public class TestBlock : Interactable
 {
     // Start is called before the first frame update
     void Start()
@@ -16,8 +15,9 @@ public class Credits : MonoBehaviour
     {
         
     }
-    public void CredChange()
+
+    protected override void Interact()
     {
-        SceneManager.LoadScene(5);
+        Debug.Log("Interacted with" + gameObject.name);
     }
 }

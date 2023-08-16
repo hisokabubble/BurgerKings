@@ -513,7 +513,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "Boss Fight Movements:\nW =  Walk Forward\nS = Walk Backwards\nA = Strafe
+    Left\nD = Strafe Right\nSpace = Jump\n\nAfter successfully running away from
+    the Boss of that level, you must face him to escape and win that level. You will
+    spawn in the Boss' lair; the restaurant. The only way out is through the kitchen,
+    where the only thing standing between you and the exit is the Boss himself. \nSmartly
+    position yourself away from the Boss, while dealing damage with your gun. Upon
+    defeating the boss, you will gain access to the exit. \nGood Luck"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1214,7 +1220,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Chase Game Movements:
+
+    A = Go Left
+
+    D = Go Right
+
+    Space =
+    Jump
+
+
+    The Goal is to collect 150 coins on the ground while avoiding the
+    obstacles at the same time.
+
+    Becareful! Do not admire the scenary too much
+    as touching the obstacles on the floor once will kill you!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
