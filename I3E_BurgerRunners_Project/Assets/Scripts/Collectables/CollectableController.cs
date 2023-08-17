@@ -15,5 +15,15 @@ public class CollectableController : MonoBehaviour
     {
         coinCountDisplay.GetComponent<TMPro.TextMeshProUGUI>().text = "" +  coinCount;
         coinEndDisplay.GetComponent<TMPro.TextMeshProUGUI>().text = "" + coinCount;
+        WinGame();
+    }
+
+    public void WinGame()
+    {
+        if(coinCount >= 10)
+        {
+            Debug.Log("You Won!");
+            //play cutscene showing the rat running into the restaurant
+        }
     }
 }

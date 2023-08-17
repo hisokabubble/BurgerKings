@@ -8,6 +8,7 @@ public class EndRunSequence : MonoBehaviour
     public GameObject liveCoins;
     public GameObject endScreen;
     public GameObject fadeOut;
+    public GameObject b2Menu;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,6 @@ public class EndRunSequence : MonoBehaviour
         endScreen.SetActive(true);
         yield return new WaitForSeconds(3);
         fadeOut.SetActive(true);
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(0);
+        b2Menu.SetActive(true);
     }
 }

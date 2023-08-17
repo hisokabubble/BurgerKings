@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ChaseWhitebox.unity
     guid: 3b941e1682a44df46b118162e31ebadf
   - enabled: 1
-    path: Assets/Scenes/BossFightWhitebox.unity
+    path: Assets/Scenes/DrinkBossFight.unity
     guid: fa03acef1250da14eb3161d2f5f52689
   - enabled: 1
     path: Assets/Scenes/PlayMenu.unity

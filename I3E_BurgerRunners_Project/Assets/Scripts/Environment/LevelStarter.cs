@@ -19,6 +19,8 @@ public class LevelStarter : MonoBehaviour
 
     IEnumerator CountSequence()
     {
+        //add cutscene showing monster chasing them here
+
         fadeIn.SetActive(true);
         yield return new WaitForSeconds(1);
         countDown3.SetActive(true);

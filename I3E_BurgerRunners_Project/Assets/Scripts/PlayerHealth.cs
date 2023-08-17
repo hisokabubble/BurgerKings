@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     
     private float health;
     private float lerpTimer;
+    public GameObject deathScreen;
 
     [Header("Health Bar")]
     public float maxHealth = 100f;
@@ -40,6 +41,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 return;
             }
+            
             durationTimer += Time.deltaTime;
             if(durationTimer > duration)
             {
@@ -47,16 +49,19 @@ public class PlayerHealth : MonoBehaviour
                 tempAlpha -= Time.deltaTime * fadeSpeed;
                 overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b, tempAlpha);
             }
+            
         }
+        
+        
         // testing keycode a now, change to if monster hit u take dmg
         //if (Input.GetKeyDown(KeyCode.A))
-       // {
-         //   TakeDamage(Random.Range(5, 10));
-       // }
+        // {
+        //   TakeDamage(Random.Range(5, 10));
+        // }
         // change to if didnt take dmg for 5 seconds regen hp
         //if (Input.GetKeyDown(KeyCode.S))
         //{
-           // RestoreHealth(Random.Range(5, 10));
+        // RestoreHealth(Random.Range(5, 10));
         //}
     }
 
@@ -92,6 +97,11 @@ public class PlayerHealth : MonoBehaviour
         lerpTimer = 0f;
         durationTimer = 0;
         overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b, 1);
+        if (health <= 0)
+        {
+            Debug.Log("You Die");
+            deathScreen.SetActive(true);
+        }
     }
 
     public void RestoreHealth(float healAmount)
@@ -99,4 +109,6 @@ public class PlayerHealth : MonoBehaviour
         health += healAmount;
         lerpTimer = 0f;
     }
+
+    
 }
