@@ -26,6 +26,7 @@ public class PlayerHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         health = maxHealth;
         overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b, 0);
     }
@@ -53,16 +54,7 @@ public class PlayerHealth : MonoBehaviour
         }
         
         
-        // testing keycode a now, change to if monster hit u take dmg
-        //if (Input.GetKeyDown(KeyCode.A))
-        // {
-        //   TakeDamage(Random.Range(5, 10));
-        // }
-        // change to if didnt take dmg for 5 seconds regen hp
-        //if (Input.GetKeyDown(KeyCode.S))
-        //{
-        // RestoreHealth(Random.Range(5, 10));
-        //}
+        
     }
 
     public void UpdateHealthUI()

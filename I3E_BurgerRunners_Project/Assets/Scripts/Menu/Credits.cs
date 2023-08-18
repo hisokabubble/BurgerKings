@@ -18,6 +18,6 @@ public class Credits : MonoBehaviour
     }
     public void CredChange()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(7);
     }
 }

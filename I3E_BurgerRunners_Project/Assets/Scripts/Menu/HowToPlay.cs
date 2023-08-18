@@ -18,6 +18,6 @@ public class HowToPlay : MonoBehaviour
     }
     public void HTP()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(6);
     }
 }

@@ -10,11 +10,14 @@ public class LevelStarter : MonoBehaviour
     public GameObject countDown1;
     public GameObject countDownGo;
     public GameObject fadeIn;
+    
+    
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(CountSequence());
+        
     }
 
     IEnumerator CountSequence()

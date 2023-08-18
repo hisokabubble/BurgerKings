@@ -9,10 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8ead4ca18d589f24298cae1dc410dfd7
   - enabled: 1
-    path: Assets/Scenes/ChaseWhitebox.unity
+    path: Assets/Scenes/CSDrink.unity
+    guid: aca9df940b17c7a49ac80acafe9fe6de
+  - enabled: 1
+    path: Assets/Scenes/ChaseDrink.unity
     guid: 3b941e1682a44df46b118162e31ebadf
   - enabled: 1
-    path: Assets/Scenes/DrinkBossFight.unity
+    path: Assets/Scenes/EndDrink.unity
+    guid: b844961d20a839e4aa4c6bcbb78c7014
+  - enabled: 1
+    path: Assets/Scenes/L1BossDrink.unity
     guid: fa03acef1250da14eb3161d2f5f52689
   - enabled: 1
     path: Assets/Scenes/PlayMenu.unity
@@ -23,6 +29,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreditsMenu.unity
     guid: 1f5fbd4604f515c458c092dc2d26f342
+  - enabled: 1
+    path: Assets/Scenes/CSFries.unity
+    guid: 8b116a981a515c1479f4e6afe42cb7d7
+  - enabled: 1
+    path: Assets/Scenes/ChaseFries.unity
+    guid: 2029e4c831b7af540af1c3f40760607d
+  - enabled: 1
+    path: Assets/Scenes/EndFries.unity
+    guid: 0ca909c201b27d94cbd80569ef6eac66
+  - enabled: 1
+    path: Assets/Scenes/CSBurger.unity
+    guid: c81613d088a148a43ac654e1fb3e0672
+  - enabled: 1
+    path: Assets/Scenes/ChaseBurger.unity
+    guid: bfdc0cebc256e384db0e5202d4de2117
+  - enabled: 1
+    path: Assets/Scenes/EndBurger.unity
+    guid: 7e2c42bdf4e8e994588050ae39c683ff
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}
