@@ -18,7 +18,7 @@ public class Hand : MonoBehaviour
             Shoot();
             var bullet = Instantiate(leafPrefab, cam.transform.position, cam.transform.rotation);
             bullet.GetComponent<Rigidbody>().velocity = cam.transform.forward * leafSpeed;
-            wizardHand.GetComponent<Animator>().Play("WizardHand");
+            
 
         }
     }
