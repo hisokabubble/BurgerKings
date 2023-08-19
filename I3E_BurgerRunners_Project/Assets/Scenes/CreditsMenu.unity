@@ -181,7 +181,28 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Special Thanks to Mixamo for providing all of the animations, as well
+    as Mousey the character used in our Run Game.
+
+
+    Credits will be given to
+    Shawn for doing the VFX and Boss Fight
+
+
+    Credits will be given to Shaun for
+    coding the Chase Game and Organistation of Scenes in Script
+
+
+    Credits will
+    be given to Izabelle for doing the UI, as welll as the music choices.
+
+
+    Credits
+    to Substance Painter Community Assets for the Textures in all our models as well
+    as Unity Terrain
+
+
+    Credits to Unity Asset Store for the Skybox Materials'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1918e396ffbdd94e9a71b272c0b738d, type: 2}
   m_sharedMaterial: {fileID: 1721291967259166603, guid: e1918e396ffbdd94e9a71b272c0b738d,
@@ -1033,8 +1054,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 478, y: -251}
-  m_SizeDelta: {x: 750, y: 300}
+  m_AnchoredPosition: {x: 478, y: -293.4317}
+  m_SizeDelta: {x: 750, y: 384.8634}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1844340427
 MonoBehaviour:
@@ -1056,7 +1077,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Fonts used:
+
+    Death Screen Font: Who Asks Satan
+
+    General Font:
+    Varela Round
+
+    Win Screen Font: Charmelade
+
+
+    SFX Used:
+
+    Cartoon Slip
+    and Coin Collect
+
+
+    BGM Used:
+
+    Pokemon Little Root Town Lofi'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

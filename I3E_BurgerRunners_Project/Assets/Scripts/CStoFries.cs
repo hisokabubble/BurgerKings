@@ -15,6 +15,6 @@ public class CStoFries : MonoBehaviour
     IEnumerator LoadSceneAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        //SceneManager.LoadScene(To wtv fries boss is);
+        SceneManager.LoadScene(14);
     }
 }

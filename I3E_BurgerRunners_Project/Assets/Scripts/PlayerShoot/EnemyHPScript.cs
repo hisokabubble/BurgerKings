@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHPScript : MonoBehaviour
 {
     public float enemyHealth = 100f;
+    public GameObject winScreen;
 
     public void DeductHealth(float deductHealth)
     {
@@ -18,5 +19,7 @@ public class EnemyHPScript : MonoBehaviour
     void EnemyDead()
     {
         Destroy(this.gameObject);
+        winScreen.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
     }
 }
